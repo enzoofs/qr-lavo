@@ -96,7 +96,7 @@ export default function Login() {
           {mode === 'signin' ? (
             <p className="text-xs text-lavo-ink bg-white border-2 border-lavo-ink rounded-md p-3 mb-4">
               Seu acesso é criado automaticamente quando a diretoria te cadastra — não precisa criar
-              conta. O <strong>login é o seu e-mail</strong> e a <strong>senha são os 4 últimos
+              conta. O <strong>login é o seu e-mail</strong> e a <strong>senha são os 6 últimos
               dígitos do seu WhatsApp</strong>. Depois de entrar, dá pra trocar a senha quando quiser
               em "Trocar senha".
             </p>
@@ -128,7 +128,7 @@ export default function Login() {
               </label>
               <input
                 type="password"
-                placeholder={mode === 'signin' ? '4 últimos dígitos do WhatsApp' : 'mín. 6 caracteres'}
+                placeholder={mode === 'signin' ? '6 últimos dígitos do WhatsApp' : 'mín. 6 caracteres'}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
